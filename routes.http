@@ -1,0 +1,30 @@
+// O id é copiado no GET e posto em videos/ para teste dos métodos http , depois do POST
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+
+{
+    "title": "video node",
+    "description": "primeiro video",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/f5bac2c3-6d66-4a3a-8e3b-414aa1c33541
+Content-Type: application/json
+
+
+{
+    "title": "video 02",
+    "description": "primeiro video",
+    "duration": 180
+}
+
+###
+DELETE http://localhost:3333/videos/f5bac2c3-6d66-4a3a-8e3b-414aa1c33541
